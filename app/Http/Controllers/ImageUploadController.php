@@ -24,16 +24,16 @@ class ImageUploadController extends Controller
     public function imageUploadPost()
     {
         request()->validate([
-            'image' => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
+            'pdffile' => 'required|mimes:pdf|max:2048',
         ]);
 
-        $imageName = time().'.'.request()->image->getClientOriginalExtension();
+        $imageName = time().'.'.request()->pdffile->getClientOriginalExtension();
         FilesController::store($imageName);
 
-        request()->image->move(public_path('images'), $imageName);
+        request()->pdffile->move(public_path('images'), $imageName);
 
         return back()
-            ->with('success','You have successfully upload image.')
-            ->with('image',$imageName);
+            ->with('success','You have successfully upload file.')
+            ->with('pdffile',$imageName);
     }
 }

@@ -11,8 +11,11 @@
             <tbody>
             @foreach($files as $file)
                 <tr>
-                    <a href="{{$file->id}}">
-                        {{$file->thumbnail}}
+                    @php $path = url('/'). "/images/". $file->pdfFile;
+                        $loc = url('/'). "/images/"
+                    @endphp
+                    <a href="{{ $path }}">
+                        <img src="{{$path}}[0]"/>
                     </a>
                 </tr>
             @endforeach

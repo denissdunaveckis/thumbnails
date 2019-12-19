@@ -104,6 +104,7 @@
       <path value="$PROJECT_DIR$/vendor/symfony/event-dispatcher-contracts" />
       <path value="$PROJECT_DIR$/vendor/symfony/polyfill-intl-idn" />
       <path value="$PROJECT_DIR$/vendor/symfony/event-dispatcher" />
+      <path value="$PROJECT_DIR$/vendor/spatie/pdf-to-image" />
     </include_path>
   </component>
   <component name="ProjectId" id="1V6roHsXbLhJs3YkVXTuOfrfddK" />
@@ -146,7 +147,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1576584558473</updated>
-      <workItem from="1576584559965" duration="21585000" />
+      <workItem from="1576584559965" duration="38197000" />
     </task>
     <servers />
   </component>

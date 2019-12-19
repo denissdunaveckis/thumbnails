@@ -17,10 +17,10 @@ class FilesController extends Controller
         return view('files.show', compact('file'));
     }
 
-    public static function store($path){
+    public static function store($path, $pathThumb){
         $file = new files;
         $file->pdfFile = $path;
-        $file->thumbnail = "b12";
+        $file->thumbnail = $pathThumb;
         $file->save();
     }
 }

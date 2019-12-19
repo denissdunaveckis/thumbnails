@@ -6,7 +6,7 @@
 </head>
 <body>
 <h1>
-    <img src="{{url('/')}}/images/{{$file->pdfFile}}"
+    <img src="{{url('/')}}/images/1576751229.jpg"
          alt ="Image" width="300" height ="300">
 </h1>
 </body>
